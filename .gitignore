@@ -9,18 +9,23 @@ __pycache__/
 venv/
 env/
 
-# Streamlit secrets
+# Environment variables
+.env
+
+# Streamlit
 .streamlit/secrets.toml
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Test/cache files
-.pytest_cache/
-.mypy_cache/
-.coverage
+# Temporary files
+*.tmp
+*.temp
+
+# Generated reports
+research_report.md
