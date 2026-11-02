@@ -1,6 +1,8 @@
-streamlit==1.64.0
-crewai==1.15.22
-crewai-tools==1.15.22
-ddgs==9.16.0
-pydantic>=2.10,<2.12
-litellm
+streamlit>=1.40,<2.0
+crewai
+# LiteLLM 1.106.x has a tool-call regression with MCP 1.30.x:
+# CacheableResult is imported from mcp.types but is not available there.
+litellm==1.105.1
+mcp==1.28.1
+ddgs>=9.0,<10.0
+pydantic>=2.7,<3.0
